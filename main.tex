@@ -1,5 +1,168 @@
-\documentclass{article}
+% Author: Benjamin Doran
+% Date: January 2018
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SETTINGS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[hidelinks, 10pt]{article}
+
+%%% PACKAGES %%%
 \usepackage[utf8]{inputenc}
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{sans}
+\usepackage{titlesec}
+ 
+
+%%% COLORS %%%
+\definecolor{sectioncolor}{RGB}{50,50,255}
+
+%%% SECTION SPACING %%%
+\titlespacing*{\section}{0pt}{0pt}{3pt}
+\pagenumbering{gobble}
+
+%%% START DOCUMENT %%%
 \begin{document}
-(Type your content here.)
+
+%%% DEFINITIONS %%%
+%% change section color %%
+\newcommand{\sectiontext}[1]{\bf\color{sectioncolor}#1}
+%% large bold text %%
+\newcommand{\titletext}[1]{{\large\bf #1}}
+%% Header for subsections #1 (where) #2 (local) #3 (when) #4 (position)
+\newcommand{\experiencetitle}[4]{
+\titletext{#1}, {#2}  \hspace*{\fill} \emph{#3} \\ 
+\emph{#4}\vspace{-6pt}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\huge\bf Benjamin A. Doran} \hspace*{\fill}  
+{\color{blue} \href{mailto://BenjaminDoran@g.harvard.edu}{\large BenjaminDoran@g.harvard.edu}}
+\hrule
+\vspace{6pt}
+{\color{blue}\url{https://github.com/BenjaminDoran}} $\blacklozenge$ 781-910-6938 $\blacklozenge$ 14 Atwood St., Wakefield, MA, 01880
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\sectiontext{EDUCATION}}
+\begin{addmargin}{.5in}
+%%% SCHOOL %%%
+\experiencetitle{Harvard University Extension School}{Cambridge MA}{May 2018}{Bachelor of Liberal Arts (ALB)}
+\begin{itemize}\setlength\itemsep{-4pt}
+  \item{Minors: English $\&$ Computer Science}
+  \item{Dean's list: 2014-2017}
+  \item{GPA: 3.65}
+\end{itemize}
+%%% CERTIFICATE %%%
+\experiencetitle{Harvard University Extension School}{Cambridge MA}{Jan 2018}{Professional Graduate-level Certificate in
+Data Science} \\ \\
+%%% RELEVANT COURSES %%%
+% Big Data Analytics
+\titletext{Relevant Courses}
+\vspace{-9pt}
+\begin{multicols}{2}
+  \begin{itemize}\setlength\itemsep{-4pt}
+    \item{Bioinformatics Algorithms}
+    \item{Molecular $\&$ Cellular Biology}
+    \item{Data Science $\&$ Statistical Learning with R}
+    \item{Fundamentals of Sequence Analysis}
+    \item{Big Data in Healthcare Applications}
+    \item{Machine Learning $\&$ Data Mining}
+  \end{itemize}
+\end{multicols}
+\end{addmargin}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TECHNICAL SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\sectiontext{TECHNICAL SKILLS}}
+\begin{addmargin}{1.7in}
+\begin{itemize}\setlength\itemsep{-4pt}
+	\item[{\bf Languages}]{Python, C, R, Matlab, Javascript, YAML, SQL, CQL}
+	\item[{\bf Modeling}]{Tensorflow, BioPython, Sci-Kit Learn, Gensim, NLTK}
+    \item[{\bf Visualization}]{Matplotlib, Plotly, ggplot2}
+    \item[{\bf Databases}]{MySQL, Neo4j, Cassandra, NCBI-Entrez, JASPER}
+    \item[{\bf Management}]{Github, Gitlab, ServiceNow, Asana}
+    \item[{\bf Deployment}]{Docker Hub, Google Cloud, Amazon Web Services}
+\end{itemize}
+\end{addmargin}
+\vspace{6pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\sectiontext{EXPERIENCE}}
+\begin{addmargin}{.5in}
+
+%%% E-23a - HARVARD EXT. %%%
+\experiencetitle{E-23a - Harvard Extension School}{Cambridge MA}{Jan 2018-Present}{Teaching Fellow}
+  \begin{itemize}\setlength\itemsep{-4pt}
+    \item{Lead bi-weekly sections and office hours for Harvard Extension School's \emph{Introduction to Game\\ Development} course, teaching Unity and LÖVE-2D frameworks}
+    \item{Grade all homework and projects of students in section}
+    \item{Coach and support students in planning, coding, and publishing 3 games each}
+  \end{itemize}
+%%% CS50 - HARVARD UNI. %%%
+\experiencetitle{CS50 - Harvard University}{Cambridge MA}{Sep 2016-Jan 2018}{Teaching Fellow}
+  \begin{itemize}\setlength\itemsep{-4pt}
+    \item{Led weekly 20 student sections and one-on-one tutor sessions for Harvard University and Yale's joint \emph{Introduction to Computer Science} course, enrolling over 600 students}
+    \item{Assisted in twice-weekly office hours attended by over 100 students per session}
+    \item{Created questions for annual coding contest – via HackerRank}
+    \item{Graded all homework and exams of students in section}
+    \item{Coached and supported students with final projects}
+  \end{itemize}
+%%% Harvard Kennedy School %%%
+\experiencetitle{Harvard Kennedy School}{Cambridge MA}{Jun 2015-Jun 2017}{Support Process Analyst}
+	\begin{itemize}\setlength\itemsep{-4pt}
+    	\item{Developed internal IT department website in SharePoint}
+        \item{Maintained service catalog and process knowledgebase in ServiceNow $\&$ Excel}
+        \item{Served as technical support first-contact for over 800 students, staff, $\&$ faculty}
+        \item{Trained new hires on support processes}
+    \end{itemize}
+%%% LUCIOUS BEEBE LIBRARY %%%
+\experiencetitle{Lucius Beebe Memorial Library}{Wakefield MA}{Jan 2011-Mar 2016}{Page/Volunteer}
+	\begin{itemize}\setlength\itemsep{-4pt}
+    	\item{Updated over 100 booklists in WordPress}
+        \item{Adjusted books’ status in library’s Evergreen database}
+        \item{Prepared materials for all youth programs}
+    \end{itemize}
+\end{addmargin}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\sectiontext{PROJECTS}}
+\begin{addmargin}{.5in}
+%% INDR %%
+\experiencetitle{\normalsize Unimodality Based Clustering Applied to Biological Motif Discovery}{Independent Study}{Present}{\vspace{6pt}}{\color{blue}\url{https://gitlab.com/BenjaminDoran/motif-proposal}} \\ 
+%% URBAN SOUND %%
+\experiencetitle{\normalsize Urban Sound Classification}{Group Final Project}{Dec 2016}{}{\color{blue}\url{https://github.com/BenjaminDoran/Urban-Sound-Classification}}
+\begin{description}
+\item{}
+\end{description}
+\end{addmargin}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % INTERESTS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section*{\sectiontext{INTERESTS}}
+% \begin{addmargin}{.5in}
+% Hackathons, Ductigami, Military history, Cooking, Martial arts, Strategy board-games, Hiking
+% \end{addmargin}
+
+
+%%% END OF DOCUMENT %%%
 \end{document}
+
+
+
