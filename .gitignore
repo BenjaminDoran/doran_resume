@@ -1,2 +1,7 @@
-BDoranCV.*
+# ignore everything
+*
+.pdf
+
+# except .tex
 !*.tex
+
