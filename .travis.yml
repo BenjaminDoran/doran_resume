@@ -12,4 +12,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: BenjaminDoran/doran_resume
-    branch: setup-travis
+    branch: master
+    tags: true
