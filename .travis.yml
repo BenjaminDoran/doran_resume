@@ -12,5 +12,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: BenjaminDoran/doran_resume
-    branch: master
+    branch: 
+    - master
+    - v-data-science
     tags: true
